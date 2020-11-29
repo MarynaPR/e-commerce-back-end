@@ -19,7 +19,7 @@ It shows the configuration to connect a database using Sequelize. Uses environme
 
 ## Resources Used :wrench: 
 
-* [figlet package](https://www.npmjs.com/package/figlet)
+<!-- * [figlet package](https://www.npmjs.com/package/figlet) -->
 * [Inquirer package](https://www.npmjs.com/package/inquirer)
 * [dotenv package](https://github.com/motdotla/dotenv)
 * [console.table package](https://www.npmjs.com/package/console.table) 
@@ -30,12 +30,20 @@ It shows the configuration to connect a database using Sequelize. Uses environme
 
 ## Installation :electric_plug:
 
-* npm init
-* npm install dotenv
-* npm install inquirer
+* npm init -y
+* npm install --save sequelize
 * npm install --save mysql2 
+* npm i jest
+* npm install express sequelize mysql2
+* npm install dotenv
+
+
+
+* npm install inquirer
 * npm install console-table --save
-* npm install figlet
+<!-- * npm install figlet -->
+
+* npm
 
 Run the following command at the root of your directory to prompt questions: 
  * npm start or node server
