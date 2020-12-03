@@ -1,4 +1,4 @@
-## E-commerce-back-end
+## ECOMMERCE
 
 ## Images :camera_flash:
 
@@ -8,25 +8,25 @@ The following image shows the web application's appearance and functionality:
 
 ## Description :page_with_curl:
 
-This code features a back end for an e-commerce site. With working Express.js API it configures the use of Sequelize to interact with a MySQL database.
-It shows the configuration to connect a database using Sequelize. Uses environment variables to store sensitive data, like MySQL username and password.
+```
+This code features a back end for an e-commerce site.
+With working Express.js API it configures the use of Sequelize to interact with a MySQL database.
+It shows the configuration to connect a database using Sequelize.
+```
 
 ## Technology Used :label: 
 
 * Node.js
 * Inquirer
 * MySQL
+* Sequilize
 
 ## Resources Used :wrench: 
 
-<!-- * [figlet package](https://www.npmjs.com/package/figlet) -->
 * [Inquirer package](https://www.npmjs.com/package/inquirer)
-* [dotenv package](https://github.com/motdotla/dotenv)
-* [console.table package](https://www.npmjs.com/package/console.table) 
 * [emoji-cheat-sheet:for readme](https://github.com/ikatyang/emoji-cheat-sheet)
-
 * [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect Express.js API to a MySQL database 
-* [Dotenv package](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data, like MySQL username, password, and database name.
+* [Dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables to store sensitive data, like MySQL username, password, and database name.
 
 ## Installation :electric_plug:
 
@@ -37,20 +37,26 @@ It shows the configuration to connect a database using Sequelize. Uses environme
 * npm install express sequelize mysql2
 * npm install dotenv
 
+* after creating the models and routes, run `npm run seed` to seed data to your database to test the routes
+
+* `npm start or node server` - run  at the root of your directory to connect to the server
 
 
-* npm install inquirer
-* npm install console-table --save
-<!-- * npm install figlet -->
+## Testing :repeat_one:
 
-* npm
+Because this application is not deployed, the following links show examples of the application's API routes being tested on Insomnia. 
 
-Run the following command at the root of your directory to prompt questions: 
- * npm start or node server
+[link](https://drive.google.com) 
 
- ## Testing :repeat_one:
+The first video shows GET routes to return all categories, all products, and all tags being tested in
+![Insomnia](./Assets/13-orm-homework-demo-01.gif)
+The second animation shows GET routes to return a single category, a single product, and a single tag being tested in:
+![Insomnia](./Assets/13-orm-homework-demo-02.gif)
+The final animation shows the POST, PUT, and DELETE routes for categories being tested in 
+![Insomnia](./Assets/13-orm-homework-demo-03.gif)
 
-Because this application is not deployed, here's a [link](https://drive.google.com) to a walkthrough video that demonstrates its functionality.
+
+Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
 
 ## Contribution :heavy_plus_sign: 
 
@@ -90,87 +96,14 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 
 Create the configuration to connect a database using Sequelize. Use environment variables to store sensitive data, like your MySQL username and password.
-## Mock-Up
-The following animations show examples of the application's API routes being tested in Insomnia.
-The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia:
-![Insomnia Demo](./Assets/13-orm-homework-demo-01.gif)
-The second animation shows GET routes to return a single category, a single product, and a single tag being tested in Insomnia:
-![Insomnia Demo](./Assets/13-orm-homework-demo-02.gif)
-The final animation shows the POST, PUT, and DELETE routes for categories being tested in Insomnia:
-![Insomnia Demo](./Assets/13-orm-homework-demo-03.gif)
-Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia.
+
 
 ## Getting Started
 You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [Dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables to store sensitive data, like your MySQL username, password, and database name.
 Use the `schema.sql` file in the `db` folder to create your database using MySQL shell commands. Use environment variables to store sensitive data, like your MySQL username, password, and database name.
 
-### Database Models
-Your database should contain the following four models, including the requirements listed for each model:
-* `Category`
-  * `id`
-    * Integer
-    * Doesn't allow null values
-    * Set as primary key
-    * Use auto increment
-  * `category_name`
-    * String
-    * Doesn't allow null values
-* `Product`
-  * `id`
-    * Integer
-    * Don't allow null values
-    * Set as primary key
-    * Use auto increment
-  * `product_name`
-    * String
-    * Doesn't allow null values
-  * `price`
-    * Decimal
-    * Doesn't allow null values
-    * Validate that the value is a decimal
-  * `stock`
-    * Integer
-    * Doesn't allow null values
-    * Set a default value of 10
-    * Validate that the value is numeric
-  * `category_id`
-    * Integer
-    * Reference the `category` model's `id` 
-* `Tag`
-  * `id`
-    * Integer
-    * Don't allow null values
-    * Set as primary key
-    * Use auto increment
-  * `tag_name`
-    * String
-* `ProductTag`
-  * `id`
-    * Integer
-    * Don't allow null values
-    * Set as primary key
-    * Use auto increment
-  * `product_id`
-    * Integer
-    * Reference the `product` model's `id`
-  * `tag_id`
-    * Integer
-    * Reference the `tag` model's `id`
-### Associations
-You'll need to execute association methods on your Sequelize models to create the following relationships between them:
-* `Product` belongs to `Category`, as a Category can have multiple Products but a Product can only belong to one Category
-* `Category` has many `Product`
-* `Product` belongs to many `Tag`, using the `ProductTag` through model, allow Products to have multiple Tags and Tags have many Products
-* `Tag` belongs to many `Product`
-> **Hint:** Make sure you set up foreign key relationships that match the column we created in the respective models.
 
-### Fill out the API Routes to Perform RESTful CRUD Operations
-Fill out the unfinished routes in `product-routes.js`, `tag-routes.js`, and `category-routes.js` to perform Create, Read, Update, and Delete operations using your Sequelize models.
-> **Note:** The functionality for creating the many-to-many relationship for products is already done for you.
-> **Hint:** Be sure to look at your module project's code for syntax help and use your model's column definitions to figure out what `req.body` will be for POST and PUT routes!
 
-### Seed the Database
-After creating the models and routes, run `npm run seed` to seed data to your database so you can test your routes.
 ### Sync Sequelize to the Database on Server Start
 
 Create the code needed in `server.js` to sync our Sequelize models to our MySQL database on server start.

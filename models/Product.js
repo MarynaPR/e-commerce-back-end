@@ -45,11 +45,10 @@ Product.init(
       //   * Doesn't allow null values
       allowNull: false,
       //   * Set a default value of 10
-      validate: {
-        len: [10],
-        //   * Validate that the value is numeric
-        isNumeric: true
-      },
+      defaultValue: 10,
+      //   * Validate that the value is numeric
+      isNumeric: true
+
     },
     // * `category_id`
     category_id: {
