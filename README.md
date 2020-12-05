@@ -39,13 +39,13 @@ It shows the configuration to connect a database using Sequelize.
 
 Because this application is not deployed, the following links show the application's API routes being tested on Insomnia. 
 
-* The first video shows GET routes to return all categories, all products, and all tags being tested in ![Insomnia](https://drive.google.com/file/d/15kpfca78XXseM011_AXl34B-WiZMyQp-/view)
-* The second video shows GET routes to return a single category, a single product, and a single tag being tested in ![Insomnia](https://drive.google.com/file/d/1A_32jkjX5jEfl4QrGSs6bMwboJfS0N4i/view)
-* The third video shows the POST, PUT, and DELETE routes for categories being tested in 
-![Insomnia](https://drive.google.com/file/d/1YNSR718lkGGNgQdnbATdt51aeY7xBswk/view)
-* The forth video shows the POST, PUT, and DELETE routes for products being tested in ![Insomnia](https://drive.google.com/file/d/18rYi1MCW1O4e7tJvNXTi3AVrwHaw2FPh/view)
-The third video shows the POST, PUT, and DELETE routes for tags being tested in 
-![Insomnia](https://drive.google.com/file/d/1TzqjYtO4W_jtaxbQ_ln38KeKfa_nHnUY/view)
+* This [video](https://drive.google.com/file/d/15kpfca78XXseM011_AXl34B-WiZMyQp-/view)
+shows GET routes to return all categories, all products, and all tags.
+* The following [video](https://drive.google.com/file/d/1A_32jkjX5jEfl4QrGSs6bMwboJfS0N4i/view)
+shows GET routes to return a single category, a single product, and a single tag
+* The third [video](https://drive.google.com/file/d/1YNSR718lkGGNgQdnbATdt51aeY7xBswk/view)shows the POST, PUT, and DELETE routes for categories.
+* POST, PUT, and DELETE routes for products being tested are dispalyed in this [video](https://drive.google.com/file/d/18rYi1MCW1O4e7tJvNXTi3AVrwHaw2FPh/view)
+* POST, PUT, and DELETE routes for tags being tested in this [video](https://drive.google.com/file/d/1TzqjYtO4W_jtaxbQ_ln38KeKfa_nHnUY/view)
 
 
 ## Contribution :heavy_plus_sign: 
