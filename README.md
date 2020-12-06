@@ -10,7 +10,6 @@ The following image shows the web application's appearance:
 
 This code features a back end for an e-commerce site. With working Express.js API it configures the use of Sequelize to interact with a MySQL database.
 
-
 ## Technology Used :label: 
 
 * Node.js
@@ -31,8 +30,7 @@ This code features a back end for an e-commerce site. With working Express.js AP
 * `npm install express sequelize mysql2`
 * `npm install dotenv`
 * run `npm run seed` to seed data to database to test the routes
-* run `npm start or node server` at the root of the directory to connect to the server
-
+* run `npm start` at the root of the directory to connect to the server
 
 ## Testing :repeat_one:
 
@@ -41,9 +39,8 @@ Because this application is not deployed, the following links show the applicati
 * This [video](https://drive.google.com/file/d/15kpfca78XXseM011_AXl34B-WiZMyQp-/view) shows GET routes to return all categories, all products, and all tags.
 * The following [video](https://drive.google.com/file/d/1A_32jkjX5jEfl4QrGSs6bMwboJfS0N4i/view) shows GET routes to return a single category, a single product, and a single tag
 * The third [video](https://drive.google.com/file/d/1YNSR718lkGGNgQdnbATdt51aeY7xBswk/view) shows the POST, PUT, and DELETE routes for categories.
-* POST, PUT, and DELETE routes for products being tested are dispalyed in this [video](https://drive.google.com/file/d/18rYi1MCW1O4e7tJvNXTi3AVrwHaw2FPh/view).
+* POST, PUT, and DELETE routes for products being tested are displayed in this [video](https://drive.google.com/file/d/18rYi1MCW1O4e7tJvNXTi3AVrwHaw2FPh/view).
 * POST, PUT, and DELETE routes for tags being tested in this [video](https://drive.google.com/file/d/1TzqjYtO4W_jtaxbQ_ln38KeKfa_nHnUY/view).
-
 
 ## Contribution :heavy_plus_sign: 
 
